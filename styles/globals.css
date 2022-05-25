@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flexi-w{
+    @apply w-full md:w-[70%] mx-auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.grid-cols{
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-4 min-h-[50vh];
+   
 }

@@ -4,6 +4,7 @@ import Footer from '@/components/footer'
 import Hero from '@/components/hero'
 import Posts from '@/components/posts'
 import usePosts from '@/queries/usePosts'
+import Meta from '@/components/meta'
 export default function SSGPage() {
   let hero ={
     title:"SSG With Data ",
@@ -11,6 +12,7 @@ export default function SSGPage() {
   }
   const  post= usePosts(10)
   return (<div className='flexi-w'>
+    <Meta/>
     <Header/>
     <Hero {...hero}/>
     <Posts posts={post}/>

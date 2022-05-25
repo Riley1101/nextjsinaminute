@@ -4,7 +4,9 @@ export default function Header() {
   return (
       <div className="z-40 px-0 navbar bg-base-100">
           <div className="flex-1">
-              <a className="text-xl normal-case btn btn-ghost">NextJS in a minute</a>
+              <Link href='/'>
+                  <a className="text-xl normal-case btn btn-ghost">NextJS in a minute</a>
+              </Link>
           </div>
           <div className="flex-none">
               <ul className="p-0 menu menu-horizontal">
@@ -25,7 +27,7 @@ export default function Header() {
                                 </Link>
                             </li>
                           <li>
-                              <Link href='/ssg/isr'>
+                              <Link href='/'>
                                   ISR
                               </Link>
                           </li>
